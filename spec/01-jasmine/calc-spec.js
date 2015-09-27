@@ -26,7 +26,7 @@ describe('Inflation Calculator', function() {
       $('#endDate').val('2012/12/01');
       $('#startPrice').val(100);
       var result = fetchOptions();
-      expect(result.start).toMatch('2012/01/01'); 
+      expect(result.start).toMatch('2012/01/01');
       expect(result.end).toMatch('2012/12/01');
       expect(result.amount).toMatch(100);
     });
@@ -35,7 +35,7 @@ describe('Inflation Calculator', function() {
       $('#endDate').val('2012/12/01');
       $('#startPrice').val(355);
       var result = fetchOptions();
-      expect(result.start).toMatch('2010/01/01'); 
+      expect(result.start).toMatch('2010/01/01');
       expect(result.end).toMatch('2012/12/01');
       expect(result.amount).toMatch(355);
     });
